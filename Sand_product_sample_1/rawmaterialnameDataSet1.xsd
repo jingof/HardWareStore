@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rawmaterialnameDataSet" targetNamespace="http://tempuri.org/rawmaterialnameDataSet1.xsd" xmlns:mstns="http://tempuri.org/rawmaterialnameDataSet1.xsd" xmlns="http://tempuri.org/rawmaterialnameDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Sand_product_sample_1_dbConString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Sand_product_sample_1_dbConString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sand_product_sample_1.Properties.Settings.GlobalReference.Default.Sand_product_sample_1_dbConString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="raw_material_tableTableAdapter" GeneratorDataComponentClassName="raw_material_tableTableAdapter" Name="raw_material_table" UserDataComponentName="raw_material_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Sand_product_sample_1_dbConString (Settings)" DbObjectName="dbo.raw_material_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT raw_material_name FROM dbo.raw_material_table</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="raw_material_name" DataSetColumn="raw_material_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rawmaterialnameDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="rawmaterialnameDataSet" msprop:Generator_UserDSName="rawmaterialnameDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="raw_material_table" msprop:Generator_TableClassName="raw_material_tableDataTable" msprop:Generator_TableVarName="tableraw_material_table" msprop:Generator_TablePropName="raw_material_table" msprop:Generator_RowDeletingName="raw_material_tableRowDeleting" msprop:Generator_RowChangingName="raw_material_tableRowChanging" msprop:Generator_RowEvHandlerName="raw_material_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="raw_material_tableRowDeleted" msprop:Generator_UserTableName="raw_material_table" msprop:Generator_RowChangedName="raw_material_tableRowChanged" msprop:Generator_RowEvArgName="raw_material_tableRowChangeEvent" msprop:Generator_RowClassName="raw_material_tableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="raw_material_name" msprop:Generator_ColumnVarNameInTable="columnraw_material_name" msprop:Generator_ColumnPropNameInRow="raw_material_name" msprop:Generator_ColumnPropNameInTable="raw_material_nameColumn" msprop:Generator_UserColumnName="raw_material_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
